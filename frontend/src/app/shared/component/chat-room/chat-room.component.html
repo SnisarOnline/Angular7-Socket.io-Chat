@@ -1,0 +1,8 @@
+<nav style="float: right">
+  <select [(ngModel)]="chooseRoom.name" >
+    <option *ngFor="let room of arrayRooms" [value]="room"  >{{room}}</option>
+  </select>
+
+  <button type="button" class="btn btn-primary" (click)="join()">Join</button>
+  <button type="button" class="btn btn-default" (click)="leave()">Leave</button>
+</nav>

@@ -1,0 +1,27 @@
+<div class="app-chat">
+
+
+  <div class="chat-title">
+    <!-- Статус соединения пользователя-->
+    <h3 class="chat-status">User: {{online.status}}</h3>
+
+    <!-- Список всех доступных комнат -->
+    <shared-chat-room [arrayRooms]="arrayRooms"
+                      (joinRoom)="joinRoom($event)"
+                      (leaveRoom)="leaveRoom()"
+    ></shared-chat-room>
+
+  </div>
+
+  <!-- Список смс в комнате -->
+  <div class="chat-message" >
+    <shared-chat-message [allMessage]="allMessage" [user]="online.author"></shared-chat-message>
+  </div>
+
+  <!-- Отправка новых смс -->
+  <div class="chat-form" *ngIf="online.room.name">
+    <shared-chat-form (sendMessage)="saveChange($event)"></shared-chat-form>
+  </div>
+
+
+</div>

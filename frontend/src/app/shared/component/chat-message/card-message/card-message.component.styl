@@ -1,0 +1,68 @@
+//@import "~@angular/../../src/styles.styl"; // cool
+@require "../../../../../styles.styl"; // cool
+
+.message-cards{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+
+  padding: 5px 10px 10px 15px;
+
+  .mat-card{
+    display: inline-block;
+    background: LightTheme-colorCard;
+    color: LightTheme-colorText;
+    max-width: 80%;
+
+    mat-card-header{
+      .card-header-image{
+        height: 60px;
+        width: 55px;
+        img{
+          position: relative;
+          width: 100%;
+          height: auto;
+        }
+      }
+      //mat-card-title{}
+      //mat-card-subtitle{}
+    }
+    //mat-card-content{
+    //  p{}
+    //}
+
+  }
+
+  .server{
+    width: 90%
+    align-self: center;
+    text-align: center;
+    background: LightTheme-colorCard - 15;
+  }
+  .left {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .right{
+    align-self: flex-end;
+    text-align: right;
+  }
+
+
+}
+
+:host-context(.DarkTheme) {
+  .mat-card{
+    background: DarkTheme-colorCard;
+    color: DarkTheme-colorText;
+    box-shadow: 0px 0px 8px #41418c;
+  }
+  .server{
+    background: #212635;
+    box-shadow: 0px 0px 8px #212635;
+  }
+}

@@ -1,0 +1,20 @@
+<mat-grid-list class="mat-grid-list" cols="{{columns}}">
+
+  <mat-grid-tile class="menu-item"  *ngFor="let theme of allThemes">
+
+    <div class="theme-picker"  (click)="toggleTheme( theme )"
+         matRipple
+         [matRippleCentered]="matRipple.centered"
+         [matRippleDisabled]="matRipple.disabled"
+         [matRippleUnbounded]="matRipple.unbounded"
+         [matRippleRadius]="matRipple.radius"
+         [matRippleColor]="theme.color"
+    >
+      <mat-icon *ngIf="theme.name === checkTheme.name">check_circle</mat-icon>
+    </div>
+
+  </mat-grid-tile>
+
+</mat-grid-list>
+
+

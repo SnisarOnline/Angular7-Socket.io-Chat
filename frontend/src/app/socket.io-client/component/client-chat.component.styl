@@ -1,0 +1,83 @@
+//@import "~@angular/../../src/styles.styl"; // cool
+@require "~@angular/../../src/styles.styl"; // cool
+
+.app-chat{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+
+  padding: 10px 10px;
+
+  .chat-title {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+    background: LightTheme-BaseColor;
+
+    position: relative;
+    overflow: hidden;
+    .chat-status {
+      text-align: center;
+    }
+    shared-chat-room{
+      position: absolute;
+      right: 0
+      top: 20px
+    }
+  }
+
+
+  .chat-message {
+    order: 2;
+    flex: 1 2 auto;
+    align-self: flex-start;
+    width: 100%;
+    height: 200px;
+
+    border-radius: 8px;
+    border-right-width: 0;
+    border-left-width: 10px;
+
+    background: LightTheme-colorBackground ;
+    border: solid LightTheme-BaseColor;
+  }
+
+
+  .chat-form{
+    order: 3;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    width: 100%;
+
+    //min-height: 100px;
+    background: LightTheme-BaseColor;
+  }
+
+}
+
+
+:host-context(.DarkTheme) {
+
+  .app-chat{
+    .chat-title {
+      background: DarkTheme-BaseColor;
+
+      //.chat-status {}
+      //shared-chat-room{}
+    }
+    .chat-message {
+      background: DarkTheme-colorBackground;
+      border: solid  DarkTheme-BaseColor;
+    }
+    .chat-form{
+      background: DarkTheme-BaseColor;
+    }
+  }
+
+}

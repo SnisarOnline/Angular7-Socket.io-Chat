@@ -1,0 +1,55 @@
+//@import "~@angular/../../src/styles.styl"; // cool
+@require "~@angular/../../src/styles.styl"; // cool
+
+.app-body {
+  //display: flex;
+  //flex-direction: column;
+  height:  100vh;
+  max-height: 100vh;
+
+  background: LightTheme-BaseColor;
+  color: LightTheme-colorText;
+  font-family: LightTheme-font-family;
+  font-size: 1em;
+  position: relative;
+
+
+
+  .app-body-toggle {
+    width: 100px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  .app-body-title {
+    height: 12%;
+    text-align: center;
+    //order: 0;
+    //flex: 0 1 auto;
+    //align-self: auto;
+  }
+  .app-body-content {
+    height: 100%;
+    //order: 0;
+    //flex: 1 0 auto;
+    //align-self: auto;
+    //overflow hidden
+    //flex-grow 1
+  }
+
+
+
+}
+
+
+/*
+1) https://angular.io/guide/component-styles#host
+2) https://angular.io/guide/component-styles#host-context
+*/
+:host-context(.DarkTheme) {
+  .app-body {
+    background: DarkTheme-BaseColor
+    color: DarkTheme-colorText;
+    font-family: DarkTheme-font-family;
+  }
+}

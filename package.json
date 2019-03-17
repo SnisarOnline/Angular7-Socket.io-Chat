@@ -1,0 +1,26 @@
+{
+  "name": "angular7-socket.io-chat-example",
+  "description": "A simple example of using WebSockets for example chat",
+  "keywords": ["simple example", "express", "angular", "WebSockets", "socket.io"],
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": {
+    "name": "Igor Snisar",
+    "email": "Snisar.online@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "install": "npm run install_frontend  &&  npm run install_backend",
+    "start": "npm run frontend  &&  npm run backend ",
+    "start_dev": "npm run dev_frontend  &&  npm run dev_backend ",
+
+    "install_frontend": "npm run install_frontend --prefix frontend/",
+    "install_backend": "npm run install_backend --prefix backend/",
+
+    "dev_frontend": "npm run dev --prefix frontend/",
+    "dev_backend": "npm run dev --prefix backend/",
+
+    "frontend": "npm run-script pro --prefix frontend/",
+    "backend": "npm run-script pro --prefix backend/"
+  }
+}

@@ -1,0 +1,20 @@
+<div class="message-list ">
+  <div>
+    <button   mat-mini-fab color="primary"
+              (click)="scrollTo('bottom')"
+    > Down</button>
+  </div>
+  <mat-list>
+
+    <shared-card-form-message
+       *ngFor="let message of allMessage"
+      [message]="message" [user]="user"
+    ></shared-card-form-message>
+
+  </mat-list>
+  <div class="up">
+    <button   mat-mini-fab color="primary"
+              (click)="scrollTo('top')"
+    > Up</button>
+  </div>
+</div>

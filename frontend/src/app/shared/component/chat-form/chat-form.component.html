@@ -1,0 +1,19 @@
+<form  (keyup.enter)="send()"  >
+
+  <mat-form-field >
+<!-- TODO: appAutofocus - mat-form-field вызывает не кретичную ошибку
+  ExpressionChangedAfterItHasBeenCheckedError:
+    Expression has changed after it was checked.
+    Previous value: 'mat-form-field-should-float: false'.
+    Current value: 'mat-form-field-should-float: true'.
+-->
+    <textarea matInput Autosize appAutofocus
+              type="text" rows="1" name="text"
+              [(ngModel)]="FormMessage"
+              placeholder="Type your message here..."
+              required
+    ></textarea>
+
+  </mat-form-field>
+
+</form>

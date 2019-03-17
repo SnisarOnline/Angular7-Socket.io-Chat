@@ -1,0 +1,38 @@
+//@import "~@angular/../../src/styles.styl"; // cool
+@require "~@angular/../../src/styles.styl"; // cool
+
+.mat-grid-list {
+  .menu-item{
+    z-index 1
+    overflow: visible;
+    .theme-picker {
+      cursor:pointer;
+
+      width: 35px;
+      height: 35px;
+      border-radius: 50px;
+      margin: 5px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      mat-icon{
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+      }
+    }
+  }
+  .menu-item:nth-child(1){
+    .theme-picker {
+      background: LightTheme-colorBackground;
+    }
+  }
+  .menu-item:nth-child(2){
+    .theme-picker {
+      background: DarkTheme-colorBackground;
+    }
+  }
+}
+

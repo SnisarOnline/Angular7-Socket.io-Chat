@@ -1,0 +1,29 @@
+<div class="message-cards">
+
+  <mat-card *ngIf="newMessage.author.name === 'server' " class="server" >
+
+    <mat-card-content>
+      <p> {{newMessage.text}} </p>
+    </mat-card-content>
+
+  </mat-card>
+
+
+  <mat-card *ngIf="newMessage.author.name !== 'server' "
+            [className]="newMessage.author.name === user.name ? 'mat-card right' : 'mat-card left' ">
+
+    <mat-card-header>
+      <div mat-card-avatar class="card-header-image">
+        <img src="{{newMessage.author.avatar}}" alt="icon">
+      </div>
+      <mat-card-title>Author: {{newMessage.author.name}}</mat-card-title>
+      <mat-card-subtitle>Room: {{newMessage.room.name}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p> {{newMessage.text}} </p>
+    </mat-card-content>
+
+  </mat-card>
+
+</div>

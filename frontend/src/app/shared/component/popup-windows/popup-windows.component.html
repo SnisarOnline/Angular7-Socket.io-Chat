@@ -1,0 +1,9 @@
+<p>
+  Please initial your name
+</p>
+
+<input type="text" appAutofocus
+       placeholder="User Name"
+       (keyup.enter)="onSave()"
+       [formControl]="userNameFormControl" required>
+
