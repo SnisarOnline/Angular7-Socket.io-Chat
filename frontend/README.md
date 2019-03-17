@@ -1,6 +1,6 @@
 # Socket.io-chat-frontend
 
-#### A simple example of using WebSockets for example chat
+### A simple example of using WebSockets for example chat
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
 
