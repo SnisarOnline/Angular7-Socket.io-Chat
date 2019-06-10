@@ -2,7 +2,7 @@
 
 ### A simple example of using WebSockets for example chat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
+> This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
 
 ## Used :
 1) [Material](https://material.angular.io/guide/getting-started#alternative-2-angular-devkit-6-) 
@@ -64,7 +64,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
    </head>
    ```
 
-    
+
 ## Run Angular Client:
 ```bash
 npm install
@@ -75,3 +75,6 @@ ng build  or  npm build
 START Server and Open in your browser [http://localhost:3000](http://localhost:3000/)
 
 
+## ToDo: 
+- typing and upload files
+[tutorials](https://pusher.com/tutorials/typing-indicator-file-attachment-angular-7) + [github](https://github.com/ayoisaiah/angular7-chatroom)

@@ -1,6 +1,6 @@
 # Socket.io-chat-example
 
-### A simple example of using WebSockets for example chat
+> ### A simple example of using WebSockets for example chat
 
 ### Used :
 + [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
