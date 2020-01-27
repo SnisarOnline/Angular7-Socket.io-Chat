@@ -1,7 +1,13 @@
 {
   "name": "socket.io-chat-backend",
   "description": "A simple example of using WebSockets for example chat",
-  "keywords": ["express", "WebSockets", "socket.io", "winston", "chat"],
+  "keywords": [
+    "express",
+    "WebSockets",
+    "socket.io",
+    "winston",
+    "chat"
+  ],
   "version": "1.0.0",
   "main": "app.js",
   "author": {

@@ -1,7 +1,14 @@
 {
   "name": "socket.io-chat-frontend",
   "description": "A simple example of using WebSockets for example chat",
-  "keywords": ["angular", "typescript", "WebSockets", "socket.io", "socket.io-client", "@types/socket.io-client"],
+  "keywords": [
+    "angular",
+    "typescript",
+    "WebSockets",
+    "socket.io",
+    "socket.io-client",
+    "@types/socket.io-client"
+  ],
   "version": "1.0.0",
   "main": "index.html",
   "author": {
